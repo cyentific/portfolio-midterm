@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Days+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  background: url(theatre.jpg) no-repeat center top fixed;
+  /* background: url(theatre.jpg) no-repeat center bottom fixed; */
+  /* background-size: 1920px; */
+  background-color: black;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+body {
+  font-family: 'Days One', sans-serif;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  justify-content: space-between;
+  height: 100vh;
+  gap: 2vh;
+  /* background: #ff0072; */
+}
+
+#homeBody #mainContainer {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: min-content auto min-content;
+  grid-row-gap: 2vh;
+}
+
+#yardBody #mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: unset;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+#mainContainer > div {
+  /* background-color: blue; */
+}
+
+#navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  padding-top: 2vh;
+}
+
+#navContainer a {
+  height: 100%
+}
+
+#navContainer>a img:nth-child(2) {
+  display: none;
+}
+
+/* Contact interaction */
+#navContainer>a:hover img:first-child {
+  display: none;
+}
+
+#navContainer>a:hover img:nth-child(2) {
+  display: inline;
+}
+
+#navContainer img {
+  height: 100%
+}
+
+/* .yardGallery { */
+#yardGallery {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* width: 60%; */
+  /* height: 10vh; */
+  gap: 4vh;
+  width: 90vw;
+}
+
+/* .yardImages { */
+/* #yardImages {
+  width: 100%;
+} */
+
+/* .yardImages img { */
+#yardGallery img {
+  width: 30%;
+}
+
+.slider {
+  /* margin:50px auto; */
+  /* width: 60%; */
+  /* padding-left: 7vw; */
+  /* padding-bottom: 8vw; */
+  /* height: 50vh; */
+  /* overflow: hidden; */
+  display: flex;
+  height: min-content;
+  width: min-content;
+  /* background-color: yellow !important; */
+  align-self: center;
+  justify-self: center;
+}
+
+.img-box {
+  /* width: 100%; */
+  height: 100%;
+  max-height: 70vh;
+  max-width: 70vw;
+  overflow-x: scroll;
+  /* width: 500px; */
+}
+
+.img-box img {
+  /* width: 100%; */
+  /* width: 100%; */
+  /* border: 1vw solid gold; */
+  /* height: 100%; */
+  max-width: 80vw;
+  object-fit: contain;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 5px 5px;
+  font-size: 20px;
+  color: #ddd;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.btn:hover {
+  background: #FFFF00;
+}
+
+/* .swiper {
+  max-width: 90vw;
+}
+
+.slideContent {
+  height: 100%;
+}
+
+.slideContent img {
+  height: 100%;
+} */
+
+
+
+.swiper {
+  --swiper-navigation-color: rgba(150,150,150,0.8);
+  --swiper-pagination-color: rgba(150,150,150,0.8);
+  width: 90vw;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#networkInfo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 14.5vw;
+  padding-top: 2.5vw;
+}
+
+#aboutInfo {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+#cyimage {
+  display: inline-flex;
+  justify-content: flex-start;
+  order: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding-bottom: 1vw;
+  padding left: 4vw;
+
+
+}
+
+#biography {
+  display: inline-flex;
+  order: 2;
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+  padding-right: 5vw;
+  padding-bottom: 2vw;
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#seating {
+  width: 100vw;
+  display: flex;
+  justify-content: bottom;
+  /* height: 100%; */
+}
+
+#seating>img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center top;
+}
